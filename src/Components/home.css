@@ -1,0 +1,87 @@
+.App {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: rgb(243, 234, 234);
+    /* background-image: url("https://istanbul-react.vercel.app/img/leftimage-bg.jpg"); */
+    background-size: cover;
+    background-color: black;
+    /* background-repeat: no-repeat; */
+    /* background-position: center center; */
+  }
+  
+  
+  .main-text {
+    z-index: 13;
+    position: relative;
+    /* text-align: center; */
+    display: table-cell;
+    vertical-align: middle;
+    /* padding: 20px; */
+    margin-left: 56px;
+    /* width: 520px; */
+  
+  }
+  .main-text h1 {
+    font-size: 42px;
+    line-height: 42px;
+    font-weight: 500;
+    margin: 19px 0 10px;
+    color: #555;
+    white-space: nowrap;
+    position: relative;
+  }
+  .text-left {
+    text-align: left !important;
+  }
+
+  .Big {
+    display: flex;
+    width: 1000px;
+    margin-top: 50px;
+    height: 350px;
+  }
+  
+  .Name {
+  
+    border-radius: 50%;
+    max-width: 320px;
+    left: calc(50vw - 360px);
+    top: calc(50vh - 160px);
+    border: 10px solid rgba(255, 255, 255, .1);
+  
+  }
+  .main-text h1 span {
+    color: #72b626;
+  }
+
+
+
+  /* Media query for screens smaller than 768px */
+@media screen and (max-width: 767px) {
+    .main-text {
+      margin-left: 20px; /* Adjust the margin for smaller screens */
+    }
+  
+    .Big {
+      flex-direction: column; /* Change flex direction for smaller screens */
+      height: auto; /* Allow the container to grow vertically based on content */
+    }
+  
+    .Name {
+      max-width: 100%; /* Allow the element to take full width on smaller screens */
+      margin: 20px auto; /* Add some space around the element */
+    }
+  }
+  
+  /* Add more media queries as needed for other screen sizes */
